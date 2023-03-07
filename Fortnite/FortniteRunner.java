@@ -10,5 +10,9 @@ public class FortniteRunner {
         vBucks.rewardVBucks();
         Skins omega = new Skins(false, 0, null, null, 0, false, false);
         omega.changeColor();
+        TraversalEmotes warthog = new TraversalEmotes(0, false, false, false, false, 0, "Warthog", "Warthog");
+        warthog.ballOut();
+        FortniteBattlePass boogieDown = new Emotes(0, false, false, false, false, 0, "Boogie Down");
+        ((Emotes) boogieDown).dance();
     }
 }
