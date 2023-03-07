@@ -42,5 +42,8 @@ private static String name;
     public void equipToWheel(){
         System.out.println(name + " equipped to wheel");
     }
+    public void ballOut(){
+        System.out.println("You begin to spin and convulse rapidly as you watch yourself emote to " + name + ".");
+    }
     
 }

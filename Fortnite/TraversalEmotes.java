@@ -16,6 +16,6 @@ public class TraversalEmotes extends Emotes{
         System.out.println("You begin to " + getName() + ".");
     }
     public void ballOut(){
-        System.out.println("You begin to spin and convulse rapidly as you watch youself ball out to " + getName() + ".");
+        System.out.println("You begin to spin and convulse rapidly as you watch yourself traverse to " + getName() + ".");
     }
 }

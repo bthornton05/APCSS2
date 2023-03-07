@@ -18,5 +18,7 @@ public class Style extends Skins{
     public void unequipStyle(){
         System.out.println("You unequipped " + getName() + ".");
     }
-    
+    public void changeColor(){
+        System.out.println("I'm sorry sir, the Omega Knight bundle is no longer avaliable.");
+    }
 }
