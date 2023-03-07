@@ -18,4 +18,7 @@ public class TraversalEmotes extends Emotes{
     public void ballOut(){
         System.out.println("You begin to spin and convulse rapidly as you watch yourself traverse to " + getName() + ".");
     }
+    public void griddy(){
+        System.out.println("I loved the part where he said its griddyin' time and then gridded everywhere.");
+    }
 }

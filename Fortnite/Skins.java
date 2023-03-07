@@ -47,6 +47,9 @@ public class Skins extends FortniteBattlePass{
             pp.close();
         }
     }
+    public void completeSkinChallenge(){
+        System.out.println("Challenge completed. A useless mask has been awarded.");
+    }
     public void changeColor(){
         System.out.println("I'm sorry sir, the season is over, you can no longer earn the Omega lights.");
     }
