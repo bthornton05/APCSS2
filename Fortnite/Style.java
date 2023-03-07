@@ -2,8 +2,8 @@ package Fortnite;
 
 public class Style extends Skins{
     private static boolean hasStyles;
-    public Style(boolean m, int l, String n, String g, int j, boolean p, int b, boolean q) {
-        super(m, l, n, g, j, p, b);
+    public Style(boolean m, int l, String n, String g, int j, boolean p, boolean i, boolean q) {
+        super(m, l, n, g, j, p, i);
         hasStyles = q;
     }
     public boolean getHasStyles(){

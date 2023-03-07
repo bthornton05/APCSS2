@@ -2,8 +2,8 @@ package Fortnite;
 
 public class TraversalEmotes extends Emotes{
     private static String prop;
-    public TraversalEmotes(int j, boolean p, int b, boolean q, boolean w, int e, String r, String t) {
-        super(j, p, b, q, w, e, r);
+    public TraversalEmotes(int j, boolean p, boolean i, boolean q, boolean w, int e, String r, String t) {
+        super(j, p, i, q, w, e, r);
         prop = t;
     }
     public String getProp(){

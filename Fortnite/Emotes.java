@@ -5,8 +5,8 @@ private static boolean hasSong;
 private static boolean fromTikTok;
 private static int goodnessScale;
 private static String name;
-    public Emotes(int j, boolean p, int b, boolean q, boolean w, int e, String r) {
-        super(j, p, b);
+    public Emotes(int j, boolean p, boolean i, boolean q, boolean w, int e, String r) {
+        super(j, p, i);
         hasSong = q;
         fromTikTok = w;
         goodnessScale = e;

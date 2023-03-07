@@ -1,14 +1,13 @@
 package Fortnite;
-import java.util.Scanner;
 public class FortniteBattlePass {
 private static int tier;
 private static boolean hasPremiumBattlePass;
-private static int vBucks;
+private static boolean isVBucks;
 
-public FortniteBattlePass(int j, boolean p, int b){
+public FortniteBattlePass(int j, boolean p, boolean i){
     tier = j;
     hasPremiumBattlePass = p;
-    vBucks = b;
+    isVBucks = i;
 }
 public int getTier(){
 return tier;
@@ -22,33 +21,27 @@ public boolean getHasPremiumBattlePass(){
 public void setHasPremiumBattlePass(boolean h){
     hasPremiumBattlePass = h;
 }
-public int getVBucks(){
-    return vBucks;
+public boolean getIsVBucks(){
+    return isVBucks;
 }
-public void setVBucks(int v){
-    vBucks = v;
+public void setIsVBucks(boolean pp){
+    isVBucks = pp;
 }
-public void buyBattlePass(){
-    vBucks -= 1000;
-    hasPremiumBattlePass = true;
-    System.out.println("You now have the premium battle pass.");
+public void needBuyBattlePass(){
+    if (hasPremiumBattlePass == true){
+        System.out.println("This tier requires the premium Battle Pass.");
+    }
+    else{
+        hasPremiumBattlePass = false;
+        System.out.println("This tier does not require the premium Battle Pass.");
+    }
 }
-public void buyTiers(){
-Scanner pp = new Scanner(System.in);
-int tiers;
-int cost;
-System.out.println("How many tiers would you like to purchase?");
-tiers = pp.nextInt();
-cost = tiers*150;
-if (cost <= vBucks){
-    vBucks -= cost;
-    tier += tiers;
-    System.out.println("You successfully purhcased " + tiers + " tiers.");
-    pp.close();
+public void rewardVBucks(){
+if (isVBucks == true){
+    System.out.println("This tier rewards 100 VBucks.");
 }
 else{
-    System.out.println("You don't have the fundage.");
-    pp.close();
+    System.out.println("This tier does not reward VBucks");
 }
 }
 }

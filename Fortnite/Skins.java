@@ -5,8 +5,8 @@ public class Skins extends FortniteBattlePass{
     private static int coolness;
     private static String color;
     private static String name;
-    public Skins(boolean m, int l, String n, String g, int j, boolean p, int b) {
-        super(j, p, b);
+    public Skins(boolean m, int l, String n, String g, int j, boolean p, boolean i) {
+        super(j, p, i);
         hasChallenges = m;
         coolness = l;
         color = g;

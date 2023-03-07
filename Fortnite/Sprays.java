@@ -1,8 +1,8 @@
 package Fortnite;
 
 public class Sprays extends FortniteBattlePass{
-    public Sprays(int j, boolean p, int b, String c, String n) {
-        super(j, p, b);
+    public Sprays(int j, boolean p, boolean i, String c, String n) {
+        super(j, p, i);
         color = c;
         name = n;
     }
