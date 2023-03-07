@@ -30,5 +30,7 @@ public class Animal
   {
      System.out.println("This animal's life span is " + aveLifeSpan + " years.");
   }
-  
+  public void speak(){
+    System.out.println("Default");
+  }
 }

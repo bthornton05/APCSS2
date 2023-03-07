@@ -8,4 +8,8 @@ public class Feline extends Animal{
     public void growl(){
         System.out.println("Battle Pass");
     }
+    public void speak(){
+        roar();
+        growl();
+    }
 }

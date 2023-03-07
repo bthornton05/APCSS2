@@ -12,4 +12,7 @@ public class Gorilla extends Primate
   {
     System.out.println("The gorilla grunts.");
   }
+  public void speak(){
+    grunt();
+  }
 }
