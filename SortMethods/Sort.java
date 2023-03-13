@@ -1,5 +1,7 @@
 package SortMethods;
 
+import java.util.Arrays;
+
 public class Sort {
     /*
  * Activity 4.10.2
@@ -11,7 +13,6 @@ public class Sort {
    * Sorts arr[l..r] using merge()
    */
   public static int position;
-  public static boolean contains=false;
   public static void mergeSort(int arr[], int lt, int rt) 
   { 
     if (lt < rt) 
@@ -144,24 +145,21 @@ public static int binarySearch(int arr[], int lt, int rt, int x)
   return -1; 
 } 
 public void badSearch(int [] pp, int desired, int lt, int rt){
+  Arrays.sort(pp);
     if (rt >= lt){ 
-    int mid = lt + (rt - lt) / 2; 
-    if(pp[mid]==desired){
+    boolean contains = false;
+    while (lt <= rt){
+      int mid = lt + (rt - lt) / 2; 
+      if(pp[mid]==desired){
         position = mid;
         contains = true;
     }
-    for (int x = 0; x<mid; x++){
-      if(pp[x] == desired){
-        position = x;
-        contains = true;
-      }
-    }
-      for(int x = mid; x<pp.length; x++){
-        if(pp[x]==desired){
-            position = x;
-            contains = true;
-        }
-      }
+      if(pp[mid] < desired){
+      lt = mid + 1;
+     }
+      if(pp[mid] > desired){
+      rt = mid - 1;
+     }
     }
     if(contains == true){
     System.out.println(position);
@@ -169,5 +167,6 @@ public void badSearch(int [] pp, int desired, int lt, int rt){
     else{
         System.out.println("Does not contain: " + desired);
     }
+}
 }
 }
