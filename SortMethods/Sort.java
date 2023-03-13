@@ -153,6 +153,7 @@ public void badSearch(int [] pp, int desired, int lt, int rt){
       if(pp[mid]==desired){
         position = mid;
         contains = true;
+        break;
     }
       if(pp[mid] < desired){
       lt = mid + 1;
